@@ -6,7 +6,6 @@ spring:
         enabled: true
     static-path-pattern: /static/**
 
-
   ##        jsp存放页面路径
 #          view:
 #          prefix: /WEB-INF/jsp/ #存放的路径
