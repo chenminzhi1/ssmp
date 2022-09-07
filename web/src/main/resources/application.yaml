@@ -1,0 +1,40 @@
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+    static-path-pattern: /static/**
+
+##        jsp存放页面路径
+#          view:
+#          prefix: /WEB-INF/jsp/ #存放的路径
+#          suffix: .jsp #jsp后缀
+#    view:
+#      prefix: / #/jsp/ #存放的路径
+#      suffix: .jsp
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mybatis?serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+
+
+  freemarker:
+    request-context-attribute: ctx
+    suffix: .ftl
+    template-loader-path: classpath:/templates
+
+  servlet:
+    multipart:
+      #设置单个文件大小
+      max-file-size: 50MB
+      #设置单次请求文件的总大小
+      max-request-size: 50MB
+
+    messages:
+      basename:classpath: /*.properties
+
+#    扫描mapper.xml
+#    mybatis:
+#     mapper-locations: classpath*:mapper/*.xml
