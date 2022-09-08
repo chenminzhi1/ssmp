@@ -20,7 +20,7 @@
     <tr>
         <th>id</th>
         <th>head</th>
-        <th>name</th>
+        <th>namea</th>
         <th>sex</th>
         <th>age</th>
         <th>email</th>
